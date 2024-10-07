@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UIEquipmentMap CLASS="Map&lt;String,Vector&lt;UIEquipment&gt;&gt;" xmlns="http://xmlns.sphenon.com/com/sphenon/ui/vui">
+  <atrest>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="ruhend"
+          en="atrest"/>
+    </name>
+  </atrest>
+  <unready>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="nicht bereit"
+          en="unready"/>
+    </name>
+  </unready>
+  <ready>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="bereit"
+          en="ready"/>
+    </name>
+  </ready>
+  <inprogress>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="in Bearbeitung"
+          en="inprogress"/>
+    </name>
+  </inprogress>
+  <interrupted>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="unterbrochen"
+          en="interrupted"/>
+    </name>
+  </interrupted>
+  <aborted>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="abgebrochen"
+          en="aborted"/>
+    </name>
+  </aborted>
+  <completed>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="abgeschlossen"
+          en="completed"/>
+    </name>
+  </completed>
+  <skipped>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="übersprungen"
+          en="skipped"/>
+    </name>
+  </skipped>
+</UIEquipmentMap>

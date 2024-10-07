@@ -1,4 +1,4 @@
-package com.sphenon.basics.processing;
+package com.sphenon.basics.processing.factories;
 
 /****************************************************************************
   Copyright 2001-2024 Sphenon GmbH
@@ -15,11 +15,24 @@ package com.sphenon.basics.processing;
 *****************************************************************************/
 
 import com.sphenon.basics.context.*;
-import com.sphenon.basics.variatives.*;
-import com.sphenon.basics.variatives.classes.*;
+import com.sphenon.basics.exception.*;
+import com.sphenon.basics.notification.*;
+import com.sphenon.basics.customary.*;
+import com.sphenon.basics.expression.*;
+import com.sphenon.basics.validation.returncodes.*;
 
-public class ProcessingStringPoolRetriever {
-    static public ProcessingStringPool retrieve (CallContext context) {
-        return ProcessingStringPool.getSingleton(context);
+import com.sphenon.basics.processing.*;
+import com.sphenon.basics.processing.classes.*;
+
+public class Factory_Record {
+
+    private String log;
+
+    public void setLog(CallContext context, String log) {
+        this.log = log;
+    }
+
+    public Record create (CallContext context) {
+        return new Class_RecordLog(context, this.log);
     }
 }

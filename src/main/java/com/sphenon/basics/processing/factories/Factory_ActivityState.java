@@ -1,7 +1,7 @@
 package com.sphenon.basics.processing.factories;
 
 /****************************************************************************
-  Copyright 2001-2018 Sphenon GmbH
+  Copyright 2001-2024 Sphenon GmbH
 
   Licensed under the Apache License, Version 2.0 (the "License"); you may not
   use this file except in compliance with the License. You may obtain a copy
@@ -32,15 +32,15 @@ public class Factory_ActivityState {
 
         this.state_is_valid = true;
 
-        if (this.state.equals("ATREST"            )) { this.activity_state = ActivityState.ATREST                     ; return; }
-        if (this.state.equals("UNREADY"           )) { this.activity_state = ActivityState.UNREADY                    ; return; }
-        if (this.state.equals("READY"             )) { this.activity_state = ActivityState.READY                      ; return; }
-        if (this.state.equals("INPROGRESS"        )) { this.activity_state = ActivityState.INPROGRESS                 ; return; }
-        if (this.state.equals("INTERRUPTED"       )) { this.activity_state = ActivityState.INTERRUPTED                ; return; }
-        if (this.state.equals("ABORTED"           )) { this.activity_state = ActivityState.ABORTED                    ; return; }
-        if (this.state.equals("COMPLETED"         )) { this.activity_state = ActivityState.COMPLETED                  ; return; }
-        if (this.state.equals("SKIPPED"           )) { this.activity_state = ActivityState.SKIPPED                    ; return; }
-        if (this.state.equals("VERIFIED"          )) { this.activity_state = ActivityState.VERIFIED                   ; return; }
+        if (this.state.equalsIgnoreCase("ATREST"            )) { this.activity_state = ActivityState.ATREST                     ; return; }
+        if (this.state.equalsIgnoreCase("UNREADY"           )) { this.activity_state = ActivityState.UNREADY                    ; return; }
+        if (this.state.equalsIgnoreCase("READY"             )) { this.activity_state = ActivityState.READY                      ; return; }
+        if (this.state.equalsIgnoreCase("INPROGRESS"        )) { this.activity_state = ActivityState.INPROGRESS                 ; return; }
+        if (this.state.equalsIgnoreCase("INTERRUPTED"       )) { this.activity_state = ActivityState.INTERRUPTED                ; return; }
+        if (this.state.equalsIgnoreCase("ABORTED"           )) { this.activity_state = ActivityState.ABORTED                    ; return; }
+        if (this.state.equalsIgnoreCase("COMPLETED"         )) { this.activity_state = ActivityState.COMPLETED                  ; return; }
+        if (this.state.equalsIgnoreCase("SKIPPED"           )) { this.activity_state = ActivityState.SKIPPED                    ; return; }
+        if (this.state.equalsIgnoreCase("VERIFIED"          )) { this.activity_state = ActivityState.VERIFIED                   ; return; }
 
         this.state_is_valid = false;
         this.activity_state = null;

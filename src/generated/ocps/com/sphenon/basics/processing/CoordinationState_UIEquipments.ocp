@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UIEquipmentMap CLASS="Map&lt;String,Vector&lt;UIEquipment&gt;&gt;" xmlns="http://xmlns.sphenon.com/com/sphenon/ui/vui">
+  <must_not_execute>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="darf nicht ausgeführt werden"
+          en="must not execute"/>
+    </name>
+  </must_not_execute>
+  <should_not_execute>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="sollte nicht ausgeführt werden"
+          en="should not execute"/>
+    </name>
+  </should_not_execute>
+  <may_execute>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="kann ausgeführt werden"
+          en="may execute"/>
+    </name>
+  </may_execute>
+  <should_execute>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="sollte ausgeführt werden"
+          en="should execute"/>
+    </name>
+  </should_execute>
+  <must_execute>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="muß ausgeführt werden"
+          en="must execute"/>
+    </name>
+  </must_execute>
+  <executed>
+    <name Type="Name">
+      <Value CLASS="Variative_VariantVector_String_"
+          de="ausgeführt"
+          en="executed"/>
+    </name>
+  </executed>
+</UIEquipmentMap>

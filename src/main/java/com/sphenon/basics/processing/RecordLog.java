@@ -15,11 +15,9 @@ package com.sphenon.basics.processing;
 *****************************************************************************/
 
 import com.sphenon.basics.context.*;
-import com.sphenon.basics.variatives.*;
-import com.sphenon.basics.variatives.classes.*;
 
-public class ProcessingStringPoolRetriever {
-    static public ProcessingStringPool retrieve (CallContext context) {
-        return ProcessingStringPool.getSingleton(context);
-    }
+public interface RecordLog extends Record {
+
+    public String getLog(CallContext context);
+
 }

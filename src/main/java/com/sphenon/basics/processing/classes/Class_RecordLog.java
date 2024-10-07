@@ -1,4 +1,4 @@
-package com.sphenon.basics.processing;
+package com.sphenon.basics.processing.classes;
 
 /****************************************************************************
   Copyright 2001-2024 Sphenon GmbH
@@ -15,11 +15,31 @@ package com.sphenon.basics.processing;
 *****************************************************************************/
 
 import com.sphenon.basics.context.*;
-import com.sphenon.basics.variatives.*;
-import com.sphenon.basics.variatives.classes.*;
+import com.sphenon.basics.processing.*;
 
-public class ProcessingStringPoolRetriever {
-    static public ProcessingStringPool retrieve (CallContext context) {
-        return ProcessingStringPool.getSingleton(context);
+import com.sphenon.ui.annotations.*;
+
+public class Class_RecordLog implements RecordLog {
+
+    public Class_RecordLog(CallContext context) {
+    }
+
+    public Class_RecordLog(CallContext context, String log) {
+        this.log = log;
+    }
+
+    protected String log;
+
+    @UIAttribute(Name="Log")
+    public String getLog (CallContext context) {
+        return this.log;
+    }
+
+    public void setLog (CallContext context, String log) {
+        this.log = log;
+    }
+
+    public String toString() {
+        return this.log;
     }
 }
